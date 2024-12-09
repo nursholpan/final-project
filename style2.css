@@ -15,7 +15,7 @@ body {
 	align-items: flex-start; /* Align to the left (or adjust as needed) */
 	padding: 10px; /* Adjust padding */
 	height: 100vh;
-	background-image: url("mat.gif");
+	background-image: url("lava.gif");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
