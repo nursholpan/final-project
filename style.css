@@ -1,0 +1,290 @@
+* {
+	box-sizing: border-box;
+	text-decoration: none;
+}
+html {
+	scroll-behavior: smooth;
+
+}
+body {
+	margin:0px;
+	padding: 0px;
+/*	background-color: black;*/
+	font-family: times;
+}
+.Hero-Section {
+	display: flex;
+	flex-direction: column; /* Stack children vertically */
+	justify-content: center; /* Center vertically */
+	align-items: flex-start; /* Align to the left (or adjust as needed) */
+	padding: 10px; /* Adjust padding */
+	height: 100vh;
+	background-image: url(https://cdn.prod.website-files.com/5ea82056771c9dd4b6f61bdc/5ec29d0e8d5a33390455425d_psychology-of-the-internet.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+h1 {
+	font-size: 4rem;
+	color: white;
+	margin: 0; /* Remove default margin */
+	text-align: center;
+}
+
+h4 {
+	color: white;
+	font-family: sans-serif;
+	font-size: 30px;
+	background-color: black;
+	padding: 10px;
+	margin: 0; /* Ensure no margin pushes it away */
+	margin-top: 0px; /* Optional: Add some gap between h1 and h4 */
+}
+
+.Menu {
+	display: flex;
+	align-items: center; /* to center vertically */
+	justify-content: center; /* to create a distance between the logo and the list*/
+	position: fixed; /* for keeping the nav bar static when scrolling */
+	height:6% ;
+	width: 100%;
+	padding: 0; /* to indent the logo a bit to the right*/
+	font-family: calibri;
+	transition: background-color 0.3s;
+}
+.Menu.scrolled {
+	background-color: black;
+}
+.Menu a:hover {
+	background-color: #313840;
+	padding: 7px;
+}
+li {
+	display: inline-block; /* to place in a row */
+	margin-left: 0;
+	padding-left: 35px;
+}
+li a{
+	color: whitesmoke;
+	font-size: 18px;
+	margin-right: 25px;
+}
+
+.Subheadings {
+	background-color: black;
+}
+.Quote {
+ 	justify-content: center;
+ 	padding: 20px;
+ 	background-color: white;
+ 	display: inline-block;	
+ 	align-items: center;
+}
+.Quote h2 {
+	font-family: monospace;
+	font-size: 3rem;
+	padding: 20px;
+	margin: 20px;
+	text-align: center;
+}
+p {
+	text-align: center;
+	font-family: cursive;
+	font-size: 2rem;
+}
+.FirstContent {
+	display: flex;
+	padding: 50px;
+	align-items: center;
+	background-color: black;
+	color: white;
+	flex-direction: column;
+}
+.FirstContent h3{
+	font-family: bold sans-serif;
+	font-size: 3rem;
+	background-color: black;
+	margin-top: 0;
+	color: white;
+	text-align: center;	
+}
+.Persuasive-Gif {
+	float: right;
+	border-radius: 2%;
+	height: 50%;
+	width: 40%;
+	object-fit: cover;
+	justify-content: flex-start;
+  	transition: transform 0.3s;
+
+}
+.Persuasive-Gif:hover {
+	transform: scale(1.1);  /* Slightly scale up the image */ }
+.FirstContent p {
+	font-family: serif;
+	margin-left: 20px;
+	margin-right: 20px;
+	float: left;
+	font-size: 30px;
+/*	justify-content: flex-start;*/
+
+}
+.More-Button {
+	background-color: white;
+	color: black;
+	padding: 14px;
+	transition: backround-color 0.2s, color 0.4s;
+}
+.More-Button:hover {
+	background-color: #313840;
+	color: white;
+}
+
+.SecondContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: white;
+    padding: 10px;
+    color: black;
+}
+
+.SecondContent h3 {
+	padding: 20px;
+	font-family: bold sans-serif;
+	font-size: 3rem;
+	margin-top: 20px;
+	color: black;
+	text-align: center;		
+}
+.grid-item {
+	align-items: right;
+	justify-content: right;
+    position: relative;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    width: 75%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 3px 5px 8px rgba(0, 0, 0, .7);
+    transition: transform 0.3s ease-in-out; /* Smooth scaling animation */
+}
+
+.grid-item img {
+    width: 25%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 8px; /* Match border radius */
+}
+
+.grid-item:hover {
+    transform: scale(1.2); /* Scale up on hover */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    background-color: black;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.grid-item:hover .overlay {
+    opacity: 1; /* Show overlay on hover */
+}
+
+.overlay h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    text-align: left;
+   	background-color: black;
+   	color: white;
+
+}
+
+.overlay p {
+    font-size: 20px;
+    text-align: center;
+    font-family: fantasy;
+/*    word-wrap: wrap;*/
+    margin-top: 7px;
+    color: white;
+}
+#qq {
+	font-family: cursive;
+	color:yellow;
+}
+
+.ThirdContent {
+	display: flex;
+	padding: 50px;
+	align-items: center;
+	background-color: black;
+	color: white;
+	flex-direction: column;
+}
+.ThirdContent h3{
+	font-family: bold sans-serif;
+	font-size: 3rem;
+	background-color: black;
+	margin-top: 30px;
+	color: white;
+	text-align: center;	
+}
+.slider {
+	display: flex;
+	overflow-x: auto;
+	align-items: center;
+	column-gap: 20xp;
+	padding: 20xp;
+	scroll-snap-align: x madatory;
+	margin: 10px;
+	background-color: black;
+
+}
+
+.item {
+	width: 900px;
+	height: 800px;
+	background-color: black;
+}
+.item img {
+	background-color: black;
+	justify-content: center;
+	height: 460px;
+	width: 460px;
+	margin-left: 30px;
+	border-radius: 50%;
+    box-shadow: 0 5px 9px rgba(199, 203, 208, .7);
+
+}
+.item h2 {
+	text-align: center;
+	color: whitesmoke;
+	font-size: 1.5rem;
+	font-family: Comic;
+}
+
+.item p {
+	color: whitesmoke;
+	margin: 30px;
+	object-fit: cover;
+	font-size: 20px;
+	font-family: monospace;
+}

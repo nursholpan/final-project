@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Final Assignment</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <!-- First, creating the menu bar for navigating the website -->
+    <div class="Menu">    
+        <ul> <!-- Using ul and li for better semantics and its shorter -->
+            <li><a href="index.html">Home</a></li>
+            <li><a href="grid-page.html">Persuasive Design</a></li>
+            <li><a href="#More-Techniques">More Techniques</a></li>
+            <li><a href="#Solutions">Mitigation</a></li>                            
+        </ul>
+    </div>
+
+    <div class="Hero-Section">
+        <h1 id="outputHeader">INTERNET PSYCHOLOGY</h1>    
+        <h4>Explore the psychological tricks keeping you online</h4>
+    </div>
+
+    <div class="Subheadings">
+        <div class="Quote">
+            <h2>"Social media isn’t a tool that’s just waiting to be used. It has its own goals, and it has its own means of pursuing them by using your psychology against you"</h2>        
+            <p>- Tristan Harris, Former Ethicist of Google</p>
+        </div>
+
+        <div class="FirstContent">
+            <h3 id="outputGenre2">PERSUASIVE DESIGN</h3>
+            <img src="mygif.gif" class="Persuasive-Gif">
+            <p>Persuasive design elements are constantly present in our daily online interactions, particularly on social media. Features like likes, notifications, and clicking sounds are designed to keep you engaged with the platform, encouraging you to return repeatedly. In doing so, they track and analyze your behavior to hook you up even more. The main factors of persuasion are motivation, ability, and triggers.</p>
+            <a href="grid-page.html" class="More-Button">Learn More</a>
+        </div>    
+
+        <!-- <div class="divider"></div>         -->
+
+        <div id="More-Techniques" class="SecondContent">
+            <h3>MORE PSYCHOLOGICAL TECHNIQUES</h3>
+            
+            <div class="grid-item">
+                <img src="https://media0.giphy.com/media/l0Iyp38qI3UjEoPGE/giphy.gif"/>
+                <div class="overlay">
+                    <h3>Infinite Scrolling</h3>
+                    <p>The brain gets small dopamine hits with each scroll, encouraging continuous engagement without realizing the passage of time</p>
+                </div>
+            </div>
+            
+            <div class="grid-item">
+                <img src="https://media2.giphy.com/media/u10GReM6igVGg/200w.gif?cid=6c09b952afhg8seh8f13bryu8egwoqm6w92cv19lxdkc845d&ep=v1_gifs_search&rid=200w.gif&ct=g"/>
+                <div class="overlay">
+                    <h3>Fear of Missing Out - FOMO</h3>
+                    <p>Constant updates and notifications make users feel they might miss out on something important or exciting. This fear drives people to check platforms frequently to stay “in the loop.”</p>
+                </div>
+            </div>
+            
+            <div class="grid-item">
+                <img src="https://media.tenor.com/vhP5HIjv3k8AAAAM/rainbow-spongebob.gif" />
+                <div class="overlay">
+                    <h3>Social Validation</h3>
+                    <p>Likes, comments, and shares create a feedback loop of social validation. These triggers make users crave more approval and interaction, fostering a sense of self-worth tied to online presence.</p>
+                    <p id="qq">“It’s a social-validation feedback loop... exactly the kind of thing that a hacker like myself would come up with, because you’re exploiting a vulnerability in human psychology.”<br>- Sean Parker, Former CEO of Facebook</p>
+                </div>
+            </div>
+
+            <div class="grid-item">
+                <img src="https://i.pinimg.com/originals/28/ad/8a/28ad8afb6c91d28bcc8bf1f04e302b77.gif" />
+                <div class="overlay">
+                    <h3>Dopamine-Driven Feedback <br> aka Positive Reinforcement</h3>
+                    <p>Social media platforms are designed to trigger the release of dopamine in users' brains, which is associated with pleasure and reward.</p>
+                    <p id="qq">“The short-term, dopamine-driven feedback loops that we have created are destroying how society works. No civil discourse, no cooperation; misinformation, mistruth. And it’s not an American problem—this is a global problem.”<br>- Chamath Palihapitiya, Former VP of Facebook</p>
+                </div>
+            </div>        
+        </div>    
+
+        <div id="Solutions" class="ThirdContent">
+            <h3 id="outputGenre4">How To Deal With This</h3>
+        </div>    
+        <div class="slider">
+            <div class="item">
+                <img src="https://cdnl.iconscout.com/lottie/premium/thumb/time-management-animation-download-in-lottie-json-gif-static-svg-file-formats--business-planning-schedule-effective-and-belief-pack-animations-4698926.gif"/>
+                <h2>Set Time Limits</h2>
+                <p>Use time management tools or apps that limit your daily usage of certain apps or websites."Forest" app is amazing for focus. It kills your tree when you move to a different app :( It's okay my forest is mostly dead as well </p>
+            </div>
+            <div class="item">
+                <img src="https://cdn.shopify.com/s/files/1/3104/9196/files/1377665_LowerStress_060922.gif?v=1655399885"/>
+                <h2>Be Mindful</h2>
+                <p>Recognize the triggers and pause before acting. Identify when you are being pulled into scrolling then disengage. I know this is a hard one</p>
+            </div>
+            <div class="item">
+                <img src="https://i1.wp.com/credomobblog.wpengine.com/wp-content/uploads/2018/02/notifcations_1200x620_facebook.gif?ssl=1"/>
+                <h2>Turn off the Notifications</h2>
+                <p>The biggest trigger of all is notification sound with notification itself. Therefore turn it off completely, espcially when you know nobody's texting you</p>
+            </div>   
+            <div class="item">
+                <img src="giphy.gif"/>
+                <h2>Delete Social Media</h2>
+                <p>Maybe listen to what Jaron Lanier says and limit yourself from social media usage completely if you can. Try it and let me know!</p>
+            </div>                     
+        </div>         
+    </div>
+
+    <div id="outputGrid"></div>
+
+    <script src="animation.js"></script>
+</body>
+</html>

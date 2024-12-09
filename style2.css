@@ -1,0 +1,104 @@
+* {
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+body {
+	margin:0px;
+	padding: 0px;
+	font-family: times;
+}
+.Hero-Section {
+	display: flex;
+	flex-direction: column; /* Stack children vertically */
+	justify-content: center; /* Center vertically */
+	align-items: flex-start; /* Align to the left (or adjust as needed) */
+	padding: 10px; /* Adjust padding */
+	height: 100vh;
+	background-image: url("mat.gif");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: 50% 0%;
+}
+
+.Menu {
+	display: flex;
+	align-items: center; /* to center vertically */
+	justify-content: center; /* to create a distance between the logo and the list*/
+	position: fixed; /* for keeping the nav bar static when scrolling */
+	height:6% ;
+	width: 100%;
+	padding: 0; /* to indent the logo a bit to the right*/
+	font-family: calibri;
+	transition: background-color 0.3s;
+}
+.Menu.scrolled {
+	background-color: black;
+}
+.Menu a:hover {
+	background-color: #313840;
+	padding: 7px;
+}
+li {
+	display: inline-block; /* to place in a row */
+	margin-left: 0;
+	padding-left: 35px;
+}
+li a{
+	color: whitesmoke;
+	font-size: 18px;
+	margin-right: 25px;
+}
+.grid {
+  display: flex;
+  gap: 10%;
+  padding: 10px;
+}
+
+.grid-item {
+	object-fit: cover;
+  position: relative;
+  width: 1300px;
+  height: 500px;
+  overflow: hidden;
+  margin: 0;
+}
+
+.grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+  transition: transform 0.3s;
+}
+
+.grid-item:hover img {
+  filter: grayscale(0%);
+  transform: scale(1.1); 
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  transition: opacity 0.3s ease;
+  font-size: 2rem;
+}
+
+.grid-item:hover .overlay {
+  opacity: 1;
+}
+
